@@ -23,7 +23,7 @@ public class PostsApiController {
         return postsService.update(id,requestDto);
     }
     //조회 기능
-    @GetMapping("/ap1/v1/posts/{id}")
+    @GetMapping("/api/v1/posts/{id}")
     public PostsResponseDto findById (@PathVariable Long id){
         return postsService.findById(id);
     }
